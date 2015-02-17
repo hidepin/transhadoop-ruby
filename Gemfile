@@ -2,4 +2,4 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "net-ssh"
+gem "net-scp"
