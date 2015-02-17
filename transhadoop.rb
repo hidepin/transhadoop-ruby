@@ -6,4 +6,10 @@ require 'bundler'
 
 Bundler.require
 
-puts "hello."
+remotehost="localhost"
+remoteuser="dev"
+remotepasswd="dev123"
+
+
+Net::SCP.download!(remotehost, remoteuser,  ARGV[0], ".",
+                   :ssh => { :password => remotepasswd })
